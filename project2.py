@@ -57,5 +57,5 @@ if Yes_PJO > No_PJO:
     print("You have read Percy Jackson.")
 elif No_PJO > Yes_PJO:
     print("You have not read Percy Jackson.")
-elif No_PJO == Yes_PJO and Yes_PJO >= 0:
+elif No_PJO == Yes_PJO and Yes_PJO >0:
     print("you've read at least one of the books.")
