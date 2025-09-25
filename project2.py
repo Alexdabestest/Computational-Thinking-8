@@ -10,6 +10,7 @@ print(r"                             __/ |                                      
 print(r"                            |___/                                                             ")
 input ("")
 print("Please answer all questions with the word not the letter")
+print("and with the first letter uppercase.")
 input("")
 print("Who is the main villain in Percy Jackson and the lightning thief?")
 answer = input("A) Luke B) Kronos")
@@ -57,5 +58,5 @@ if Yes_PJO > No_PJO:
     print("You have read Percy Jackson.")
 elif No_PJO > Yes_PJO:
     print("You have not read Percy Jackson.")
-elif No_PJO == Yes_PJO and Yes_PJO >0:
+elif No_PJO == Yes_PJO and Yes_PJO > 0:
     print("you've read at least one of the books.")
