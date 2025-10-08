@@ -54,27 +54,27 @@ window.tracer(0)
 # Section 2 - Your code
 set_background("fall")
 
-#these are my rectangles
+#these are my backround squares.
 draw_rectangle("blue", 100, 100, 200, 200)
 draw_rectangle("purple", -100, 100, 200, 200)
 draw_rectangle("white", 100, -100, 200, 200)
 draw_rectangle("red", -100, -100, 200, 200)
 
-#these are my sprites
+#these are my hand picked sprites from the internet
 s1 = create_sprite("Books", 100, 100)
 s2 = create_sprite("paper_cat", -70, -100)
 s3 = create_sprite("yarn_bluee", 100, -100)
 s4 = create_sprite("pencil", -100, 100)
 
-#these are the words
+#these are the words that say my name and such
 message1 = create_sprite("alien",-150,200)
 message1.color("black")
 message1.write("Alex Nielsen",font = ("Arial", 40, "normal"))
 message1.hideturtle()
 
-message2 = create_sprite("alien",-150,-260)
+message2 = create_sprite("alien",-140,-260)
 message2.color("black")
-message2.write("Alex Nielsen",font = ("Arial", 40, "normal"))
+message2.write("Bookworm",font = ("Arial", 40, "normal"))
 message2.hideturtle()
 
 
