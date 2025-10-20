@@ -8,7 +8,7 @@ t.goto(0, 0)
 colors = ["Indigo", "DarkBlue", "Navy", "MidnightBlue"]
 t.pendown()
 t.speed(5)
-
+#I changed the speed becuse it was to slow.
 
 #this is the code to move everything around
 for i in range(182):
