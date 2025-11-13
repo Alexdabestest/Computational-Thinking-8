@@ -60,7 +60,7 @@ window.tracer(0)
 
 
 # Section 2: Setup
-s1 = create_sprite("Thief", -200, 200)
+s1 = create_sprite("Thief", -0, 0)
 
 s2 = create_sprite("night_gard", 200, -200)
 
@@ -72,8 +72,8 @@ s5 = create_sprite("blacksquare", random.randint(-300, 300),
                    random.randint(-300, 300))
 s6 = create_sprite("blacksquare", random.randint(-300, 300),
                    random.randint(-300, 300))
-s7 = create_sprite("blacksquare", random.randint(-300, 300),
-                   random.randint(-300, 300))
+s7 = create_sprite("blacksquare", random.randint(-300, 300 ),
+                    random.randint(-300, 300))
 
 set_background("black (1)")
 
@@ -86,13 +86,15 @@ def can_i_move_up(s1, blacksquare):
         return True
     if s1.ycor() > blacksquare.ycor():
         return True
-    if s1.ycor() < blacksquare.ycor() - 10:
+    if s1.ycor() < blacksquare.ycor() - 100:
         return True
     return False
 
 
 def move_up():
     s1.setheading(90)
+
+
     if can_i_move_up(s1, s3) and can_i_move_up(s1,s4) and can_i_move_up(s1,s5) and can_i_move_up(s1,s6) and can_i_move_up(s1,s7):
         s1.forward(10)
 
@@ -232,7 +234,7 @@ while True:
 
     window.update()
 
-    if timer == 60 or get_distance(s1, s2) < 10:
+    if timer == 60 or get_distance(s1, s2) < 50:
         break
 
 
